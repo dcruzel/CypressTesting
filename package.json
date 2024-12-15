@@ -11,8 +11,11 @@
     "install": "cd server && npm i && cd ../client && npm i",
     "client:build": "cd client && npm run build",
     "client:dev": "cd client && npm run dev",
+    "cypress": "cypress open",
     "build": "cd server && npm run build",
     "seed": "cd server && npm run seed",
+    "test": "cypress run --component",
+    "test-gui": "npx cypress open --detached",
     "render-build": "npm install && npm run build"
   },
   "keywords": [],

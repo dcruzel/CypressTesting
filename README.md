@@ -2,14 +2,14 @@
 
 ## Description
 ```md
-This project is create a portfolio, using my new React skills to differentiate me from my feellow developers and potential collaborators on future projects. 
+This project is to take the starter codebase of a fully functioning Tech Quiz application and enhance it by adding Cypress for both component and end-to-end tests. The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. It allows users to take a quiz of ten random questions and view their final score.
 ```
 
 ## User Story
 ```md
-- AS AN employer looking for candidates with experience building single-page applications
-- I WANT to view a potential employee's deployed React portfolio of work samples
-- SO THAT I can assess whether they're a good candidate for an open position
+- AS AN aspiring developer
+- I WANT to take a tech quiz
+- SO THAT I can test my knowledge and improve my skills
 ```
 
 
