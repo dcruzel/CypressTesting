@@ -79,6 +79,7 @@ const Quiz = () => {
   }
 
   const currentQuestion = questions[currentQuestionIndex];
+  console.log(currentQuestion);
 
   return (
     <div className='card p-4'>

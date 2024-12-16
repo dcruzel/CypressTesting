@@ -1,14 +1,18 @@
-//import React from 'react'
-import Quiz from '../../client/src/components/Quiz'
+import { mount } from '@cypress/react18';
+import Quiz from '../../client/src/components/Quiz';
+import questions from "../fixtures/questions.json";
+import * as questionApi from '../../client/src/services/questionApi';
 
 describe('<Quiz />', () => {
-  it('renders', () => {
-    // see: https://on.cypress.io/mounting-react
-    cy.mount(<Quiz />)
-  })
+  beforeEach(() => {
+    cy.stub(questionApi, 'getQuestions').resolves(questions);
+  });
 
-  it('renders the Quiz component with the proper content', () => {
-    cy.mount(<Quiz />)
-    cy.get('h4').should('have.text', 'Made with ❤️ by the Tech Thoughts team.');
-  })
-})
+  it("A user can arrive at the homepage", () => {
+    mount(<Quiz />);
+    cy.contains("Start Quiz").click();
+  }
+  );
+
+
+});
