@@ -1,9 +1,10 @@
 ## CypressTesting
 
 ## Description
-```md
+
 This project is to take the starter codebase of a fully functioning Tech Quiz application and enhance it by adding Cypress for both component and end-to-end tests. The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. It allows users to take a quiz of ten random questions and view their final score.
-```
+
+![A GIF demonstrates a functioning quiz.](./Assets/19-testing-homework-demo.gif)
 
 ## User Story
 ```md
@@ -46,6 +47,35 @@ THEN I can start a new quiz
 ## Usage
 - [Github Repo](https://github.com/dcruzel/CypressTesting)
 - [Video](https://drive.google.com/file/d/12HSww98tslbxCv1S3pyiwoqrffTTLbIi/view?usp=sharing)
+
+## Getting Started
+- To install: npm i
+- To build app: npm build
+- To run app: npm run start:dev
+- To test for cypress component: npm run test
+- To test for cypress e2e: npm run cypress
+
+- Directory structure looks like the following example:
+
+```md
+.
+├── client/                 // the client application
+├── cypress/                // Folder for Cypress
+    ├── component/          // Folder for component tests
+        └── Quiz.cy.jsx     // Component tests for the Quiz component
+    ├── e2e/                // Folder for end-to-end tests
+        └── quiz.cy.js      // End-to-end tests for the Tech Quiz
+    ├── fixtures/           // Folder for test fixtures
+        └── questions.json  // Mock data for testing
+    └── tsconfig.json
+├── server/                 // the server application
+├── .gitignore
+├── cypress.config.ts       // Runs the application using imports from lib/
+├── package.json
+├── tsconfig.json
+└── README.md              // App description, link to video, setup and usage instructions           
+```
+
 
 ## Resources
 
