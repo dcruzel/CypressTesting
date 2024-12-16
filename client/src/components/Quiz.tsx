@@ -12,7 +12,7 @@ const Quiz = () => {
   const getRandomQuestions = async () => {
     try {
       const questions = await getQuestions();
-
+      console.log(questions);
       if (!questions) {
         throw new Error('something went wrong!');
       }
